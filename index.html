@@ -93,7 +93,7 @@ html[lang="tl"] [data-l="tl"],html[lang="ilo"] [data-l="il"]{display:revert}
 .status.is-open .dot{background:#3E6B4F}
 .status.is-closed .dot{background:#5E2620}
 .status strong{color:#fff;font-weight:700}
-.ctas{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;max-width:620px;margin:0 auto}
+.ctas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem;max-width:900px;margin:0 auto}
 .btn{display:flex;align-items:center;justify-content:center;gap:.6rem;min-height:3.5rem;padding:.8rem 1.1rem;border-radius:6px;text-decoration:none;font-weight:700;font-size:1.0625rem;text-align:center}
 .btn svg{width:1.25rem;height:1.25rem;flex:none}
 .btn-call{background:transparent;color:#fff;border:1.5px solid #fff}
@@ -221,19 +221,24 @@ footer a{color:#fff}
 
     <div class="ctas">
       <div class="cta-col">
-      <a class="btn btn-call" href="tel:+639567021776">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
-        <span data-l="en">Call the shop</span><span data-l="tl">Tumawag sa shop</span><span data-l="il">Awagan ti shop</span>
-      </a>
+        <a class="btn btn-call" href="tel:+639567021776">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+          <span data-l="en">Call the shop</span><span data-l="tl">Tumawag sa shop</span><span data-l="il">Awagan ti shop</span>
+        </a>
         <p class="cap"><a class="cap-num cap-phone" href="tel:+639567021776">0956 702 1776</a></p>
       </div>
       <div class="cta-col">
-      <a class="btn btn-dir" href="https://www.google.com/maps/dir/?api=1&amp;destination=18.1995622,120.5951443" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="gpin" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8DB600"/></linearGradient></defs><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z" fill="url(#gpin)"/><circle cx="12" cy="10" r="2.6" fill="#fff"/></svg>
-        <span data-l="en">Get directions</span><span data-l="tl">Paano pumunta</span><span data-l="il">Kasano ti mapan</span>
-      </a>
-        <p class="cap"><span class="cap-num">42 Paco Roman St., Laoag City</span><span class="lm"><span data-l="en">Between <span class="mcd">McDonald's</span> and <span class="chk">Chowking</span></span><span data-l="tl">Sa pagitan ng <span class="mcd">McDonald's</span> at <span class="chk">Chowking</span></span><span data-l="il">Iti nagbaetan ti <span class="mcd">McDonald's</span> ken <span class="chk">Chowking</span></span></span></p>
-          </div>
+        <a class="btn btn-dir" href="https://www.facebook.com/profile.php?id=100094610651456" target="_blank" rel="noopener">
+          <span data-l="en">Facebook</span><span data-l="tl">Facebook</span><span data-l="il">Facebook</span>
+        </a>
+        <p class="cap"><span data-l="en">Visit our Facebook page</span><span data-l="tl">Bisitahin ang Facebook page namin</span><span data-l="il">Bisitaen ti panidmi iti Facebook</span></p>
+      </div>
+      <div class="cta-col">
+        <a class="btn btn-dir" href="https://maps.app.goo.gl/o82yM9UwD6y9cBts5" target="_blank" rel="noopener">
+          <span data-l="en">Google Maps &amp; reviews</span><span data-l="tl">Google Maps at reviews</span><span data-l="il">Google Maps ken reviews</span>
+        </a>
+        <p class="cap"><span data-l="en">Find us and read reviews</span><span data-l="tl">Hanapin kami at basahin ang mga review</span><span data-l="il">Birokannakami ken basaen dagiti review</span></p>
+      </div>
     </div>
   </div>
 </header>
