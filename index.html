@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ilo">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -206,9 +206,9 @@ footer a{color:#fff}
 
 <header class="hero">
   <div class="lang" role="group" aria-label="Language">
-    <button type="button" data-set="en" aria-pressed="true">English</button>
+    <button type="button" data-set="en" aria-pressed="false">English</button>
     <button type="button" data-set="tl" aria-pressed="false">Filipino</button>
-    <button type="button" data-set="ilo" aria-pressed="false">Ilocano</button>
+    <button type="button" data-set="ilo" aria-pressed="true">Ilocano</button>
   </div>
   <div class="wrap">
     <h1>Joshua Vehicle Maintenance Services, Laoag City</h1>
@@ -483,7 +483,7 @@ footer a{color:#fff}
     });
   }
   var saved=null; try{saved=localStorage.getItem('jvms-lang');}catch(e){}
-  setLang(['tl','ilo'].indexOf(saved)>-1?saved:'en');
+  setLang(['en','tl','ilo'].indexOf(saved)>-1?saved:'ilo');
   document.getElementById('yr').textContent=new Date().getFullYear();
   setInterval(render,60000);
 })();
