@@ -95,7 +95,7 @@ html[lang="tl"] [data-l="tl"],html[lang="ilo"] [data-l="il"]{display:revert}
 .status strong{color:#fff;font-weight:700}
 .ctas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem .5rem;max-width:900px;margin:0 auto}
 .btn{display:flex;align-items:center;justify-content:center;gap:.6rem;min-height:3.5rem;padding:.8rem 1.1rem;border-radius:6px;text-decoration:none;font-weight:700;font-size:1.0625rem;text-align:center}
-.ctas .btn{width:100%;border-radius:10px}
+.ctas .btn{width:100%;height:4.5rem;border-radius:10px}
 .btn svg{width:1.25rem;height:1.25rem;flex:none}
 .btn-call{background:#fff;color:var(--ink);border:2.5px solid #1E88E5}
 .btn-call:hover{background:#EEF5FD;color:var(--ink)}
@@ -104,6 +104,8 @@ html[lang="tl"] [data-l="tl"],html[lang="ilo"] [data-l="il"]{display:revert}
 .btn-maps{color:var(--ink);border:2.5px solid transparent;background:linear-gradient(#fff,#fff) padding-box,linear-gradient(90deg,#4285F4 0 25%,#EA4335 25% 50%,#FBBC05 50% 75%,#34A853 75%) border-box}
 .btn-maps:hover{background:linear-gradient(#F3F6FB,#F3F6FB) padding-box,linear-gradient(90deg,#4285F4 0 25%,#EA4335 25% 50%,#FBBC05 50% 75%,#34A853 75%) border-box;color:var(--ink)}
 .btn-maps svg path{fill:#EA4335}
+.maps-copy{display:flex;flex-direction:column;align-items:center;line-height:1.15}
+.maps-copy small{font-size:.8125rem;line-height:1.2;font-weight:600;white-space:nowrap}
 .btn-fb{background:#1877F2;color:#fff;border:2.5px solid #1877F2}
 .btn-fb:hover{background:#0F63D0;border-color:#0F63D0;color:#fff}
 .btn-dir{background:transparent;color:#fff;border:1.5px solid #fff}
@@ -197,7 +199,7 @@ footer a{color:#fff}
   .split,.visit-grid{grid-template-columns:1fr}
   .map{aspect-ratio:1/1}
 }
-@media (max-width:760px){.ctas{grid-template-columns:1fr}}
+@media (max-width:820px){.ctas{grid-template-columns:1fr}}
 @media (max-width:560px){
   .hero{padding-top:3.75rem}
   section{padding:2.75rem 0}
@@ -237,9 +239,9 @@ footer a{color:#fff}
       <div class="cta-col">
         <a class="btn btn-maps" href="https://maps.app.goo.gl/o82yM9UwD6y9cBts5" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6" fill="#fff"/></svg>
-          <span data-l="en">Google Maps &amp; reviews</span><span data-l="tl">Google Maps at reviews</span><span data-l="il">Google Maps ken reviews</span>
+          <span class="maps-copy"><span>Google Maps</span><small>42 Paco Roman St., Laoag City</small></span>
         </a>
-        <p class="cap">42 Paco Roman St., Laoag City</p>
+        <p class="cap cta-caption-placeholder" aria-hidden="true"></p>
       </div>
       <div class="cta-col">
         <a class="btn btn-fb" href="https://www.facebook.com/profile.php?id=100094610651456" target="_blank" rel="noopener">
